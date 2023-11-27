@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="mystyle.css">
+<script>
+const Url='https://gc7ohowr1l.execute-api.us-east-1.amazonaws.com/'
+fetch(Url)
+.then(data=>{return data.json()})
+.then(res=>{console.log(res)})
+</script>
+<script>
+  let NewValueAttribute = 1;
+  fetch('https://fbaytj4c3k.execute-api.us-east-1.amazonaws.com/getFunction')
+      .then(response => response.json())
+      .then(data => {
+         document.getElementById("counter").innerText = data.response.Item.NewValueAttribute
+      })
+</script>
+</head>
+<body>
+<p>Visitors: <span id="counter"></span></p>
+<div id="header"></div>
+<div class="left"></div>
+<div class="stuff">
+<br><br>
+  <h1>Resume</h1>
+  <h2>Joseph K Harr</h2>
+  <hr />
+  <br>
+  <p class="head">Clearance: TS/SCI</p>
+  <p class="head">CompTIA Security+ ce expires: 9/25/2026</p>
+  <br>
+  <p class="head">Interests</p>
+  <ul>
+    <li>Making money</li>
+    <li>Investing</li>
+    <li>Fun</li>
+  </ul>
+  <p class="head">Skills</p>
+  <ul>
+    <li>Linux</li>
+    <li>Other computer stuff</li>
+    <li>Real Estate</li>
+    <li>AirBNB hosting</li>
+  </ul>
+  <p class="head">Education</p>
+  <ul>
+    <!--<a href="https://learn.microsoft.com/api/credentials/share/en-us/josephharr-0805/B5FE29C3E170530E?sharingId">-->
+      <li>Microsoft Certified: Azure Administrator Associate (AZ-104) (Sep 2023)</li>
+    </a>
+    <!--Link-->
+    <a href="https://www.credly.com/badges/32d042c2-cd87-4aa8-9c55-0174e7a68852?source=linked_in_profile">
+      <li>Amazon AWS Certified Solutions Architect - Associate (SAA) (June 2022)</li>
+    </a>
+    <li>Red Hat Certified System Administrator (RHCSA) (Jan 2020)</li>
+    <a href="https://www.credly.com/badges/1e9ed5ab-62bf-4c93-9fc8-d086e19d908f/linked_in_profile">
+      <li>Microsoft Certified: Azure Fundamentals (Aug 2019)</li>
+    </a>
+    <a href="https://www.credly.com/badges/b77cf2c0-a0ec-45ab-8856-00d12771321e/linked_in_profile">
+      <li>Dell EMC Proven Professional: Specialist – Systems Administrator, Data Domain (DCS-SA) (Aug 2019)</li>
+    </a>
+    <a href="https://www.credly.com/badges/b3bc03a6-19fd-4c25-8d47-c7e9ac0a8a9a/linked_in_profile">
+      <li>Dell EMC Proven Professional: Associate – Information Storage and Management Version 3.0 Certification (June 2019)</li>
+  </a>
+    <li>MS, Information Systems Management, Keller Graduate School of Management (December 2021)</li>
+    <li>BS, Criminal Justice, Saint Leo University (October 2013)</li>
+    <li>AS, Information Systems Technology, Community College of the Air Force (May 2011)</li>
+    <li>CompTIA Security+ ce Certification (current until Sep 2026), DOD 8570 level 2 compliant</li>
+  </ul>
+  <p class="head">Experience</p>
+  <li><b>June 2023 to present - Cloud Operations Engineer CACI</b>
+  <ul class="head2">
+    <li>System administration of Department of the Air Force Cloud Works to include Elastic and ACAS solutions and their customer’s infrastructures.</li>
+    <li>Performed application updates using AWS services on DoD cloud applications.</li>
+    </ul>
+    </li>
+  <li><b>June 2022 to June 2023 - Linux System Administrator CACI</b>
+    <ul class="head2">
+      <li>Installs, supports and maintains Red Hat Enterprise Linux (RHEL) servers, workstations, and Docker containerized applications.</li>
+      <li>Manages software configuration with Puppet and Ansible while using GIT for version control.</li>
+      <li>Installs patches according to the Patch Management Plan leveraging Yellowdog Updater Modified (YUM) and Red Hat Satellite.</li>
+      <li>Maintains and operates a virtualized data center using VMWare with Dell/EMC server and storage hardware.</li>
+      <li>Responds to and resolves service outages, technical queries and other system related issues.</li>
+      <li>Conducts systems analysis and development to keep systems as current as possible with changing technology.</li>
+      <li>Provides technical guidance to Tier 1 and 2 personnel.</li>
+    </ul>
+    </li>
+  <li><b>2019 to June 2022 - Senior Field Engineer II Raytheon</b>
+    <ul class="head2">
+      <li>Provides System Administration, network, software and mission support to an integrated array of systems within DCGS.</li>
+      <li>Interfaces with customers and co-contractors on a daily basis to troubleshoot and correct system problems.</li>
+      <li>Debugs HW/SW/SYSTEM problems and communicates corrective actions to various locations and site personnel.</li>
+      <li>Installs and checkout system upgrades.</li>
+      <li>Responsibilities include the maintenance of the mission systems to include managing, monitoring multiple Oracle clustered server systems to               include all associated resources, which also includes monitoring LDAP replication, performing DNS updates and monitoring DNS replication.</li>
+      <li>Performs security certificate maintenance actions and assists site security personnel as needed for system audit management.</li>
+      <li>Provides operational and maintenance support of the GEOINT/IMINT system and installation of COTS/GOTS software in support of Demonstration               Testing activities.</li>
+    </ul>
+    </li>
+  <li><b>Pre 2019 - LOTS OF OTHER STUFF!!!</b>
+
+</div>
+<div class="right"></div>
+<div id="footer">
+  <h2 id="name">Joe</h2></div>
+</body>
+</html>
